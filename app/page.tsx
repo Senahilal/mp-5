@@ -3,7 +3,6 @@
 import styled from "styled-components";
 import { useState } from "react";
 import createNewShortenedUrl from "@/lib/createNewUrl";
-import getAllUrls from "@/lib/getAllUrls";
 import Link from "next/link";
 
 const StyledDiv = styled.div`
@@ -56,7 +55,7 @@ const StyledButton = styled.p`
 `;
 
 
-export default async function Home() {
+export default function Home() {
     const [alias, setAlias] = useState("");
     const [url, setUrl] = useState("");
     const [shortenedUrl, setShortenedUrl] = useState("");
