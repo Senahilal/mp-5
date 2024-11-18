@@ -118,9 +118,10 @@ export default function Home() {
         {loading && <p>Loading...</p>}
         {shortenedUrl && (
             <p>
-                Success! Your shortened URL: <a href={shortenedUrl}>{shortenedUrl}</a>
-            </p>
+                Success! Your shortened URL: <Link href={shortenedUrl}>{shortenedUrl}</Link>
+            </p>           
         )}
+        
         </StyledDiv>
     );
 }

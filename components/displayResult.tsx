@@ -1,5 +1,5 @@
 import { ShortenedUrls } from "@/types";
-import { ThumbDown, ThumbUp } from "@mui/icons-material";
+//import { ThumbDown, ThumbUp } from "@mui/icons-material";
 
 export default function Result({ url_object }: { url_object: ShortenedUrls }) {
     return (

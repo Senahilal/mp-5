@@ -1,6 +1,5 @@
-import Result from "@/components/displayResult";
+//import Result from "@/components/displayResult";
 import getByAlias from "@/lib/getByAlias";
-import { redirect } from 'next/navigation';
 
 export default async function AliasUrlPage({
     params,
