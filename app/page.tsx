@@ -72,7 +72,7 @@ export default function Home() {
     
         try {
             new URL(url);
-        } catch (e) {
+        } catch {
             setError("Invalid URL");
             setLoading(false);
             return;
@@ -86,7 +86,7 @@ export default function Home() {
             } else {
                 setError("Failed to create shortened URL");
             }
-        } catch (e) {
+        } catch (e: unknown) { // Ensure e is used
             if (e instanceof Error) {
                 setError(e.message || "Something went wrong");
             } else {
