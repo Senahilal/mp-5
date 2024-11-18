@@ -87,7 +87,11 @@ export default function Home() {
                 setError("Failed to create shortened URL");
             }
         } catch (e) {
-            setError("Something went wrong");
+            if (e instanceof Error) {
+                setError(e.message || "Something went wrong");
+            } else {
+                setError("Something went wrong");
+            }
         } finally {
             setLoading(false);
         }

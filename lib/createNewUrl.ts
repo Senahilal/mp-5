@@ -22,6 +22,7 @@ export default async function createNewShortenedUrl(
         throw new Error("Alias already in use");
     }
 
+    //if alias does not exist add object into db
     const res = await urlCollection.insertOne(shortUrl);
 
     if (!res.acknowledged) {
