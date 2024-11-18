@@ -1,5 +1,5 @@
 import getCollection, { URL_COLLECTION } from "@/db";
-import { ObjectId } from "mongodb";
+//import { ObjectId } from "mongodb";
 import { ShortenedUrls } from "@/types";
 
 export default async function getByAlias(alias: string,): Promise<ShortenedUrls | null> {
